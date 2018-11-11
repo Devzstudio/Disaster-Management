@@ -1,0 +1,180 @@
+a:hover{
+    text-decoration: none;
+}
+.flex-2{
+    flex:2;
+}
+.flex-3{
+    flex:3;
+}
+
+.mb-1c {
+    margin-bottom: 1rem!important;
+}
+.card-contents {
+    font-size:16px;
+}
+
+.card-contents i {
+    font-size:34px;vertical-align: text-bottom;
+}
+ 
+.card-contents span{
+    font-size:23px;vertical-align: text-bottom;
+}
+
+.card-contents h4{
+    font-size: 16px;
+}
+
+.radio {
+    position: relative;
+    margin: 0 1rem 0 0;
+    cursor: pointer;
+  }
+  .radio:before {
+    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.45, 1.8, 0.5, 0.75);
+    -moz-transition: -moz-transform 0.4s cubic-bezier(0.45, 1.8, 0.5, 0.75);
+    transition: transform 0.4s cubic-bezier(0.45, 1.8, 0.5, 0.75);
+    -webkit-transform: scale(0, 0);
+    -moz-transform: scale(0, 0);
+    -ms-transform: scale(0, 0);
+    -o-transform: scale(0, 0);
+    transform: scale(0, 0);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0.125rem;
+    z-index: 1;
+    width: 0.75rem;
+    height: 0.75rem;
+    background: #409EFF;
+    border-radius: 50%;
+  }
+  .radio:checked:before {
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  .radio:after {
+    content: "";
+    position: absolute;
+    top: -0.25rem;
+    left: -0.125rem;
+   
+    width: 1.20rem;
+    height: 1.20rem;
+    background: #fff;
+    border: 2px solid #e1e0e0c7;
+    border-radius: 50%;
+  }
+ 
+
+.card-contents  .feather {
+    width: 52px;
+    height: 34px;
+    display: block;
+    margin: 0 auto;    margin-bottom: 1rem!important;
+}
+
+
+  }
+.radio-style {
+padding-left: 10px;
+}
+
+.radio-list input{
+    padding-left:10px;
+}
+.acard{
+    color:rgb(84, 92, 100);
+    background: #fff;
+    border-radius:8px;
+}
+
+.acard .feather {
+
+    height: 48px;
+    width: 54px;
+}
+
+.el-menu-demo li:hover {
+    color: rgb(255, 208, 75);
+    border-bottom-color: rgb(255, 208, 75);
+    background-color: rgb(84, 92, 100);
+}
+
+.el-menu-item {
+    color: rgb(255, 255, 255);
+    border-bottom-color: transparent;
+    background-color: rgb(84, 92, 100);
+}
+
+.el-breadcrumb {
+    margin-left: 15px;
+}
+
+@media (min-width: 576px) { 
+    
+.el-button
+{
+    margin-left: 15px;
+    padding: 9px 15px;
+}
+
+
+
+
+
+
+ }
+
+ @media only screen and (max-width: 800px) {
+    /* Force table to not be like tables anymore */
+    #no-more-tables table,
+    #no-more-tables thead,
+    #no-more-tables tbody,
+    #no-more-tables th,
+    #no-more-tables td,
+    #no-more-tables tr {
+    display: block;
+    }
+     
+    /* Hide table headers (but not display: none;, for accessibility) */
+    #no-more-tables thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    }
+     
+    #no-more-tables tr { border: 1px solid #ccc;  }
+      
+    #no-more-tables td {
+    /* Behave like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative; 
+    white-space: normal;
+    text-align:left;
+    }
+     
+    #no-more-tables td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align:left;
+    font-weight: bold;
+    }
+     
+    /*
+    Label the data
+    */
+    #no-more-tables td:before { content: attr(data-title); }
+    }
