@@ -11,8 +11,9 @@
         </div>
     </div>
 
+    <div id="no-more-tables">
 
-    <table class="table table-bordered table-responsive table-striped mt-4 table-hover">
+    <table class="table table-bordered table-striped mt-4 table-hover">
         <thead>
             <tr>
                 <th>Position</th>
@@ -38,7 +39,7 @@
 
 
     </table>
-
+</div>
     <div class="flex flex-1 justify-center align-center mt-10">
 
         {{ $phones->appends(Illuminate\Support\Facades\Input::except('page'))->render() }}
