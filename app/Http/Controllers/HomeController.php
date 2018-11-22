@@ -36,7 +36,7 @@ class HomeController extends Controller
      **/
     public function requests()
     {
-        $data = Requests::select(['id', 'name', 'phone', 'location', 'district', 'lat', 'lon'])->where('status', '0')->where('location', 'LIKE', '%' . Auth::user()->location . '%');
+        $data = Requests::select(['id', 'name', 'phone', 'location', 'district', 'lat', 'lon','created_at'])->where('status', '0')->where('location', 'LIKE', '%' . Auth::user()->location . '%');
         return Datatables::of($data)->addColumn('map', function ($data) {
             return '<a target="BLANK" href="https://www.google.com/maps/?q=' . $data->lat . ',' . $data->lon . '"> ' . $data->location . '</a>';
         })
