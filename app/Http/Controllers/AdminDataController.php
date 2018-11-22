@@ -88,9 +88,9 @@ class AdminDataController extends Controller
         $status = Input::get('status');
 
         if ($status)
-            $data = Requests::select(['id', 'name', 'phone', 'location', 'district', 'lat', 'lon'])->where('status', '1');
+            $data = Requests::select(['id', 'name', 'phone', 'location', 'district', 'lat', 'lon','created_at'])->where('status', '1');
         else
-            $data = Requests::select(['id', 'name', 'phone', 'location', 'district', 'lat', 'lon'])->where('status', '0');
+            $data = Requests::select(['id', 'name', 'phone', 'location', 'district', 'lat', 'lon','created_at'])->where('status', '0');
 
 
         return Datatables::of($data)->addColumn('map', function ($data) {
